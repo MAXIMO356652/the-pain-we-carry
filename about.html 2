@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About The Waiting-Maximo</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+  <nav>
+    <a class="brand" href="index.html">
+      THE WAITING-MAXIMO
+    </a>
+
+    <div>
+      <a href="index.html#contents">Chapters</a> ·
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="about-title">
+
+    <small>THE WRITER BEHIND THE BOOK</small>
+
+    <h1>
+      ABOUT<br>
+      <i>THE WAITING-MAXIMO</i>
+    </h1>
+
+    <p>
+      Writer. Reader. Observer. A voice for the seasons
+      of life we rarely explain.
+    </p>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="page about-page">
+
+  <small>AUTHOR BIOGRAPHY</small>
+
+  <h2>Maximo — The Waiting-Maximo</h2>
+
+  <p>
+    <strong>Maximo</strong> is a Zambian writer, learner and
+    creative thinker whose work explores the realities of
+    growing through pressure, uncertainty, responsibility,
+    disappointment, ambition, faith and hope.
+  </p>
+
+  <p>
+    Writing under the name <strong>The Waiting-Maximo</strong>,
+    he gives words to experiences that many people carry quietly.
+    His writing is reflective, direct and grounded in real life,
+    with a focus on endurance, personal growth and the courage
+    to continue when the future is not yet clear.
+  </p>
+
+  <p>
+    His work is written for people who are still becoming:
+    people who may be tired but are still trying, people building
+    a future while dealing with present responsibilities, and
+    people learning that a painful season does not have to
+    become the ending.
+  </p>
+
+  <blockquote>
+    “We may not choose every chapter life gives us,
+    but we can choose how we write the next one.”
+  </blockquote>
+
+
+  <h2>About The Waiting-Maximo</h2>
+
+  <p>
+    The name <strong>The Waiting-Maximo</strong> represents
+    patience while becoming, endurance while building, and
+    faith while the future is still unknown.
+  </p>
+
+  <p>
+    Waiting is not surrender. Sometimes waiting means preparing,
+    learning, growing and becoming ready for what comes next.
+  </p>
+
+  <p>
+    The identity grew from a simple conviction:
+    <strong>the story is not finished just because
+    the present chapter is difficult.</strong>
+  </p>
+
+
+  <h2>Why I Write</h2>
+
+  <p>
+    I write about the things people often carry silently —
+    pressure, loneliness, sacrifice, disappointment, ambition,
+    failure, faith and hope.
+  </p>
+
+  <p>
+    Some of the strongest people you meet are fighting battles
+    nobody can see. A smile does not always mean that everything
+    is fine. Sometimes a person simply chooses to keep moving.
+  </p>
+
+  <p>
+    My writing is not meant to pretend that life is easy.
+    It is meant to remind the reader that pain can be real
+    without becoming the whole story.
+  </p>
+
+
+  <h2>Writing &amp; Works</h2>
+
+  <p>
+    <em>The Pain We Carry</em> is one of the central works
+    of The Waiting-Maximo.
+  </p>
+
+  <p>
+    Other developing writings include:
+  </p>
+
+  <ul>
+    <li><em>The Limitless</em></li>
+    <li><em>The Irreplaceable</em></li>
+    <li><em>Stepping into the Unknown</em></li>
+    <li><em>Grown as a Soldier</em></li>
+    <li><em>The Waiting-Maximo</em></li>
+  </ul>
+
+
+  <h2>Faith &amp; Perspective</h2>
+
+  <p>
+    Faith in Jehovah God is part of the foundation of my hope.
+    I do not believe faith means that life will never hurt.
+  </p>
+
+  <p>
+    I believe faith can help a person keep perspective,
+    endure difficult seasons and continue moving forward
+    when circumstances are painful.
+  </p>
+
+
+  <h2>To the Reader</h2>
+
+  <p>
+    If you found this book because you are carrying something
+    nobody else understands, I hope these pages give you
+    a place to breathe.
+  </p>
+
+  <p>
+    If you are waiting for your life to change,
+    keep preparing while you wait.
+  </p>
+
+  <p>
+    If you have fallen, get back up when you can.
+  </p>
+
+  <p>
+    If you are tired, rest — but remember that rest and
+    quitting are not the same thing.
+  </p>
+
+  <blockquote>
+    <strong>
+      You are allowed to feel the pain.
+      Just don't let the pain write your whole story.
+    </strong>
+  </blockquote>
+
+  <p>
+    <em>
+      Still waiting. Still learning.
+      Still becoming. Still writing.
+    </em>
+  </p>
+
+  <p class="signature">
+    — The Waiting-Maximo
+  </p>
+
+  <a class="button" href="index.html#contents">
+    RETURN TO THE BOOK
+  </a>
+
+</section>
+
+</main>
+
+
+<footer>
+  © 2026 The Waiting-Maximo · The Pain We Carry
+</footer>
+
+</body>
+</html>
