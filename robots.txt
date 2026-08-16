@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maximo356652.github.io/the-pain-we-carry/sitemap.xml
