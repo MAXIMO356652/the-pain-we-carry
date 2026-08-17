@@ -122,48 +122,38 @@ window.addEventListener("scroll", function () {
 const searchInput = document.getElementById("bookSearch");
 const searchResults = document.getElementById("searchResults");
 
-if (searchInput && searchResults) {
-
+if (searchInput) {
   searchInput.addEventListener("input", function () {
 
-    const query = searchInput.value.trim().toLowerCase();
+    const query = this.value.toLowerCase().trim();
     searchResults.innerHTML = "";
 
-    if (query === "") {
-      return;
-    }
+    if (!query) return;
 
-    const chapters = document.querySelectorAll(".book article");
-    let found = 0;
-
-    chapters.forEach(function (chapter) {
+    document.querySelectorAll(".book article").forEach(function (chapter) {
 
       const text = chapter.textContent.toLowerCase();
 
-      if (text.indexOf(query) !== -1) {
+      if (text.includes(query)) {
 
         const title = chapter.querySelector("h2");
 
         if (title) {
 
-          const result = document.createElement("a");
+          const link = document.createElement("a");
 
-          result.className = "search-result";
-          result.href = "#" + chapter.id;
-          result.textContent = title.textContent;
+          link.className = "search-result";
+          link.href = "#" + chapter.id;
+          link.textContent = title.textContent;
 
-          searchResults.appendChild(result);
-
-          found++;
+          searchResults.appendChild(link);
         }
       }
     });
 
-    if (found === 0) {
-      const message = document.createElement("div");
-      message.className = "search-empty";
-      message.textContent = "No results found.";
-      searchResults.appendChild(message);
+    if (searchResults.innerHTML === "") {
+      searchResults.innerHTML =
+        '<div class="search-empty">No results found.</div>';
     }
 
   });
