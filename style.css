@@ -14,15 +14,32 @@ article p {
   line-height: 1.9;
   margin-bottom: 1.4em;
   text-align: left;
-}article h2 {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 10px;
-  line-height: 1.2;
-  text-align: left;
-  margin: 6px 0 8px;
-  letter-spacing: 0.1px;
-  font-weight: 600;
 }
+
+/* Chapter number */
+article small {
+  display: block;
+  text-align: center;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* Chapter title */
+article h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 28px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .chapter-nav {
   display: flex;
   justify-content: space-between;
@@ -50,8 +67,15 @@ article p {
     line-height: 1.85;
   }
 
+  article small {
+    font-size: 14px;
+    letter-spacing: 1.8px;
+  }
+
   article h2 {
-    font-size: 08px;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 26px;
   }
 
   .chapter-nav {
