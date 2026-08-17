@@ -121,7 +121,45 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+// Book Search
+const searchInput = document.getElementById("bookSearch");
+const searchResults = document.getElementById("searchResults");
 
+if (searchInput && searchResults) {
+  searchInput.addEventListener("input", function () {
+    const query = this.value.trim().toLowerCase();
+    searchResults.innerHTML = "";
+
+    if (!query) return;
+
+    const chapters = document.querySelectorAll(".book article");
+    let found = 0;
+
+    chapters.forEach(function (chapter) {
+      const text = chapter.innerText.toLowerCase();
+
+      if (text.includes(query)) {
+        const title = chapter.querySelector("h2");
+
+        if (title) {
+          const result = document.createElement("a");
+          result.className = "search-result";
+          result.href = "#" + chapter.id;
+          result.innerHTML =
+            "<strong>" + title.innerText + "</strong>";
+
+          searchResults.appendChild(result);
+          found++;
+        }
+      }
+    });
+
+    if (found === 0) {
+      searchResults.innerHTML =
+        '<div class="search-empty">No results found.</div>';
+    }
+  });
+}
 })();
 </script>
 </body></html>
