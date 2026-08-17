@@ -27,8 +27,8 @@ article p {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  margin-top: 45px;
-  padding-top: 25px;
+  margin-top: 25px;
+  padding-top: 15px;
 }
 
 .chapter-nav .button {
