@@ -46,91 +46,10 @@ article h2 {
   font-weight: bold;
   text-align: center;
 }
-/* PROFESSIONAL HERO - CSS ONLY */
 
-.hero {
-  min-height: 100vh !important;
-  background: radial-gradient(
-    circle at center,
-    #30271f 0%,
-    #171411 65%
-  ) !important;
-  color: var(--white);
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px !important;
-}
 
-.hero .cover {
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto !important;
-  padding: 60px 20px !important;
-}
 
-.hero .copy {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero .copy h1 {
-  font-size: clamp(3.8rem, 11vw, 7.5rem) !important;
-  line-height: 0.88 !important;
-  letter-spacing: -0.04em !important;
-  font-weight: 500 !important;
-  margin: 25px 0;
-}
-
-.hero .copy p {
-  color: #d8cfc2;
-}
-
-.hero .copy p:first-child {
-  color: #c7ab7c;
-  font-family: Inter, Arial, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-}
-
-.hero .copy h1 + p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin: 30px auto;
-}
-
-.hero .button {
-  margin: 8px 5px;
-}
-
-@media (max-width: 600px) {
-
-  .hero {
-    min-height: 100svh !important;
-    padding: 25px 15px !important;
-  }
-
-  .hero .cover {
-    padding: 40px 10px !important;
-  }
-
-  .hero .copy h1 {
-    font-size: 3.8rem !important;
-  }
-
-  .hero .copy h1 + p {
-    font-size: 1.2rem;
-  }
-
-  .hero .button {
-    width: 100%;
-    margin: 6px 0;
-  }
-}
-
+  
 
 
 
