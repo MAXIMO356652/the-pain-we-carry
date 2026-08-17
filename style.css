@@ -110,3 +110,23 @@ article p {
   opacity: .7;
   padding: 10px 0;
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+.book-cover {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px 20px 50px;
+  text-align: center;
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto 25px;
+  border-radius: 4px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.book-cover .button {
+  display: inline-block;
+}
