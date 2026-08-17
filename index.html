@@ -119,44 +119,7 @@ window.addEventListener("scroll", function () {
         lastChapter = chapter.id;
         localStorage.setItem("bookReadingPosition", "#" + chapter.id);
       }
-    // Book Search
-const searchInput = document.getElementById("bookSearch");
-const searchResults = document.getElementById("searchResults");
-
-if (searchInput) {
-  searchInput.addEventListener("input", function () {
-
-    const query = this.value.toLowerCase().trim();
-    searchResults.innerHTML = "";
-
-    if (!query) return;
-
-    document.querySelectorAll(".book article").forEach(function (chapter) {
-
-      const text = chapter.textContent.toLowerCase();
-
-      if (text.includes(query)) {
-
-        const title = chapter.querySelector("h2");
-
-        if (title) {
-
-          const link = document.createElement("a");
-
-          link.className = "search-result";
-          link.href = "#" + chapter.id;
-          link.textContent = title.textContent;
-
-          searchResults.appendChild(link);
-        }
-      }
-    });
-
-    if (searchResults.innerHTML === "") {
-      searchResults.innerHTML =
-        '<div class="search-empty">No results found.</div>';
-    }
-
+    
   });
 
 }
