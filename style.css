@@ -2,9 +2,9 @@
 :root{--ink:#211c17;--paper:#f7f1e7;--line:#d7c9b5;--accent:#80623b;--dark:#171411;--white:#fffaf2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;line-height:1.75}a{color:inherit}nav{max-width:1100px;margin:auto;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}nav a{text-decoration:none}.brand{font:700 12px Inter,Arial,sans-serif;letter-spacing:.16em}nav div{font:11px Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}.hero,.about-hero{min-height:88vh;background:var(--dark);color:var(--white)}.cover,.about-cover{max-width:1100px;margin:auto;padding:15vh 24px 10vh}.copy{max-width:720px}.copy h1,.about-cover h1{font-size:clamp(4rem,10vw,9rem);line-height:.9;letter-spacing:-.04em;font-weight:500}.copy p,.about-cover p{font-size:1.5rem;color:#d8cfc2}.copy b{color:#c7ab7c}.button{display:inline-block;border:1px solid var(--accent);background:var(--accent);color:var(--white);padding:12px 18px;text-decoration:none;font:700 10px Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;margin:12px 8px 0 0}.nav-share{background:transparent;color:inherit;border:0;font:inherit;cursor:pointer;text-transform:uppercase}.page{max-width:820px;margin:auto;padding:90px 24px}.page h2{font-size:clamp(2.6rem,6vw,4.5rem);line-height:.98;font-weight:500}.page small,.book small{font:700 11px Inter,Arial,sans-serif;letter-spacing:.16em;color:var(--accent)}.book .page{border-top:1px solid var(--line)}blockquote{margin:40px 0;padding:16px 22px;border-left:3px solid var(--accent);font-size:1.55rem;font-style:italic}.contents ol{padding-left:25px}.contents li{padding:7px 0}.contents a{text-decoration:none}.about-author-cta{text-align:center;border-top:1px solid var(--line)}.reading-progress{position:fixed;top:0;left:0;width:100%;height:5px;background:rgba(0,0,0,.12);z-index:9999}.reading-progress #progressBar{width:0;height:100%;background:var(--accent);transition:width .1s}footer{background:var(--dark);color:#d8cfc2;text-align:center;padding:40px 20px;font:11px Inter,Arial,sans-serif}@media(max-width:700px){body{font-size:18px}nav{padding:17px 16px;align-items:flex-start}nav div{line-height:2}.cover,.about-cover{padding:12vh 18px 8vh}.copy h1,.about-cover h1{font-size:4.1rem}.page{padding:68px 20px}.button{width:100%;text-align:center}.nav-share{padding:0}.page h2{font-size:3rem}}
 /* Professional Book Reading Improvements */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
-:root{--ink:#211c17;--paper:#f7f1e7;--line:#d7c9b5;--accent:#80623b;--dark:#171411;--white:#fffaf2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;line-height:1.75}a{color:inherit}nav{max-width:1100px;margin:auto;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}nav a{text-decoration:none}.brand{font:700 12px Inter,Arial,sans-serif;letter-spacing:.16em}nav div{font:11px Inter,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}.hero,.about-hero{min-height:88vh;background:var(--dark);color:var(--white)}.cover,.about-cover{max-width:1100px;margin:auto;padding:15vh 24px 10vh}.copy{max-width:720px}.copy h1,.about-cover h1{font-size:clamp(4rem,10vw,9rem);line-height:.9;letter-spacing:-.04em;font-weight:500}.copy p,.about-cover p{font-size:1.5rem;color:#d8cfc2}.copy b{color:#c7ab7c}.button{display:inline-block;border:1px solid var(--accent);background:var(--accent);color:var(--white);padding:12px 18px;text-decoration:none;font:700 10px Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;margin:12px 8px 0 0}.nav-share{background:transparent;color:inherit;border:0;font:inherit;cursor:pointer;text-transform:uppercase}.page{max-width:820px;margin:auto;padding:90px 24px}.page h2{font-size:clamp(2.6rem,6vw,4.5rem);line-height:.98;font-weight:500}.page small,.book small{font:700 11px Inter,Arial,sans-serif;letter-spacing:.16em;color:var(--accent)}.book .page{border-top:1px solid var(--line)}blockquote{margin:40px 0;padding:16px 22px;border-left:3px solid var(--accent);font-size:1.55rem;font-style:italic}.contents ol{padding-left:25px}.contents li{padding:7px 0}.contents a{text-decoration:none}.about-author-cta{text-align:center;border-top:1px solid var(--line)}.reading-progress{position:fixed;top:0;left:0;width:100%;height:5px;background:rgba(0,0,0,.12);z-index:9999}.reading-progress #progressBar{width:0;height:100%;background:var(--accent);transition:width .1s}footer{background:var(--dark);color:#d8cfc2;text-align:center;padding:40px 20px;font:11px Inter,Arial,sans-serif}@media(max-width:700px){body{font-size:18px}nav{padding:17px 16px;align-items:flex-start}nav div{line-height:2}.cover,.about-cover{padding:12vh 18px 8vh}.copy h1,.about-cover h1{font-size:4.1rem}.page{padding:68px 20px}.button{width:100%;text-align:center}.nav-share{padding:0}.page h2{font-size:3rem}}
-
+/* =====================================================
+   BOOK READING
+   ===================================================== */
 
 article {
   max-width: 700px;
@@ -18,7 +18,9 @@ article p {
   line-height: 1.9;
   margin-bottom: 0.8em;
   text-align: left;
-}article h2 {
+}
+
+article h2 {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 10px;
   line-height: 1.2;
@@ -27,6 +29,7 @@ article p {
   letter-spacing: 0.1px;
   font-weight: 600;
 }
+
 .chapter-nav {
   display: flex;
   justify-content: space-between;
@@ -44,78 +47,10 @@ article p {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  article {
-    padding: 25px 16px;
-  }
 
-  article p {
-    font-size: 21px;
-    line-height: 1.85;
-  }
-
-  article h2 {
-    font-size: 08px;
-  }
-
-  .chapter-nav {
-    flex-direction: column;
-  }
-
-  .chapter-nav .button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  /* Book Search */
-
-.book-search {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 24px 40px;
-}
-
-#bookSearch {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--white);
-  color: var(--ink);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 18px;
-  outline: none;
-}
-
-#bookSearch:focus {
-  border-color: var(--accent);
-}
-
-#searchResults {
-  margin-top: 15px;
-}
-
-.search-result {
-  display: block;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-  text-decoration: none;
-}
-
-.search-result strong {
-  color: var(--accent);
-}
-
-.search-empty {
-  font-size: 16px;
-  opacity: .7;
-  padding: 10px 0;
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
-.book-cover {
-  max-width: 650px;
-  margin: 0 auto;
-  padding: 35px 20px 50px;
-  text-align: center;
-}
+/* =====================================================
+   BOOK COVER
+   ===================================================== */
 
 .book-cover {
   width: 100%;
@@ -127,8 +62,8 @@ article p {
 
 .book-cover img {
   display: block;
-  width: 260px;
-  max-width: 85%;
+  width: 220px;
+  max-width: 80%;
   height: auto;
   margin: 0 auto 20px auto;
   border-radius: 4px;
@@ -139,32 +74,44 @@ article p {
   display: inline-block;
 }
 
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
 @media (max-width: 600px) {
+
+  article {
+    padding: 25px 16px;
+  }
+
+  article p {
+    font-size: 18px;
+    line-height: 1.85;
+  }
+
+  article h2 {
+    font-size: 10px;
+  }
+
+  .chapter-nav {
+    flex-direction: column;
+  }
+
+  .chapter-nav .button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .book-cover {
+    width: 100%;
     padding: 15px 10px 25px;
     text-align: center;
   }
 
   .book-cover img {
-    width: 220px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 200px;
+    max-width: 75%;
+    margin: 0 auto 18px auto;
   }
-}
-  
-.book-cover {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 auto !important;
-  padding: 15px !important;
-  text-align: center !important;
-}
-
-.book-cover img {
-  display: block !important;
-  width: 220px !important;
-  max-width: 80% !important;
-  height: auto !important;
-  margin: 0 auto 20px auto !important;
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
