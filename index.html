@@ -5,7 +5,10 @@
 <meta property="og:url" content="https://maximo356652.github.io/the-pain-we-carry/">
 <meta property="og:type" content="website">"><link rel="stylesheet" href="style.css"></head><body>
 <div class="reading-progress"><div id="progressBar"></div></div>
-<header class="hero"><nav><a class="brand" href="#">THE WAITING-MAXIMO</a><div><a href="#contents">Chapters</a> · <a href="#about">About</a> · <a href="about.html">Author</a> · <button class="nav-share" onclick="shareBook()">Share</button></div></nav><div class="cover"><div class="copy"><small>A REFLECTION ON LIFE, PAIN & ENDURANCE</small><h1>THE PAIN<br><i>WE CARRY</i></h1><p>Growing Through the Life We Never Asked For</p><b>The Waiting-Maximo</b><a class="button" href="#contents">BEGIN READING</a>
+<header class="hero"><nav><a class="brand" href="#">THE WAITING-MAXIMO</a><div><a href="#contents">Chapters</a> · <a href="#about">About</a> · <a href="about.html">Author</a> · <button class="nav-share" onclick="shareBook()">Share</button></div></nav><div class="cover"><div class="copy"><small>A REFLECTION ON LIFE, PAIN & ENDURANCE</small><h1>THE PAIN<br><i>WE CARRY</i></h1><p>Growing Through the Life We Never Asked For</p><b>The Waiting-Maximo</b><a class="button" href="#contents">BEGIN READING</a><a class="button" href="#contents">BEGIN READING</a>
+<button id="continueReading" class="button" style="display:none;">
+  ↪ CONTINUE READING
+</button>
 <button class="button share-book" onclick="shareBook()">↗ SHARE THIS BOOK</button></div><div class="art"><div class="sun"></div><div class="road"></div></div></div></header>
 <main><section class="page intro"><h2>The pain is part of us.</h2><p>There is a kind of pain that does not make noise. It wakes up with you, follows you through the day, and sits beside you when you are alone.</p><p>You smile. You answer questions. You work. You study. You encourage others. Yet deep inside, there are battles you have never explained.</p><p><strong>The pain is real. The struggle is real. The pressure is real.</strong></p><p>But a difficult season is not the final chapter.</p></section>
 <section id="contents" class="page"><h2>Contents</h2><ol>
@@ -78,6 +81,45 @@
 (function(){
 function updateProgress(){const b=document.getElementById("progressBar");if(!b)return;const m=Math.max(1,document.documentElement.scrollHeight-innerHeight);b.style.width=Math.min(100,Math.max(0,scrollY/m*100))+"%";}
 addEventListener("scroll",updateProgress,{passive:true});addEventListener("resize",updateProgress);updateProgress();
-window.shareBook=async function(){const d={title:"The Pain We Carry — The Waiting-Maximo",text:"Read The Pain We Carry — Growing Through the Life We Never Asked For.",url:location.href};try{if(navigator.share)await navigator.share(d);else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);alert("Book link copied!");}else prompt("Copy this book link:",location.href);}catch(e){}};})();
+window.shareBook=async function(){const d={title:"The Pain We Carry — The Waiting-Maximo",text:"Read The Pain We Carry — Growing Through the Life We Never Asked For.",url:location.href};try{if(navigator.share)await navigator.share(d);else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);alert("Book link copied!");}else prompt("Copy this book link:",location.href);}catch(e){}};// your existing code...
+
+// Continue Reading
+const savedPosition = localStorage.getItem("bookReadingPosition");
+const continueButton = document.getElementById("continueReading");
+
+if (savedPosition && continueButton) {
+  continueButton.style.display = "inline-block";
+
+  continueButton.addEventListener("click", function () {
+    const target = document.querySelector(savedPosition);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+}
+
+let lastChapter = "";
+
+window.addEventListener("scroll", function () {
+  const chapters = document.querySelectorAll(".book article");
+
+  chapters.forEach(function (chapter) {
+    const rect = chapter.getBoundingClientRect();
+
+    if (rect.top <= 180 && rect.bottom > 180) {
+      if (chapter.id && chapter.id !== lastChapter) {
+        lastChapter = chapter.id;
+        localStorage.setItem("bookReadingPosition", "#" + chapter.id);
+      }
+    }
+  });
+});
+
+})();
+</script>})();
 </script>
 </body></html>
