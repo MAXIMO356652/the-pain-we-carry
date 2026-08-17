@@ -118,21 +118,21 @@ article p {
 }
 
 .book-cover {
-  max-width: 600px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 25px 20px 35px;
+  padding: 20px 15px 30px;
   text-align: center;
 }
 
 .book-cover img {
   display: block;
-  width: auto;
-  max-width: 100%;
+  width: 260px;
+  max-width: 85%;
   height: auto;
-  max-height: 650px;
-  margin: 0 auto 20px;
+  margin: 0 auto 20px auto;
   border-radius: 4px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
 }
 
 .book-cover .button {
@@ -141,13 +141,16 @@ article p {
 
 @media (max-width: 600px) {
   .book-cover {
-    padding: 18px 15px 30px;
+    padding: 15px 10px 25px;
+    text-align: center;
   }
 
   .book-cover img {
-    max-height: 500px;
-    max-width: 92%;
-    margin-bottom: 18px;
+    width: 220px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+  
 
