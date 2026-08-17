@@ -17,7 +17,8 @@ article p {
 }
 
 article h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  article h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 10px;
   line-height: 1.2;
   text-align: left;
