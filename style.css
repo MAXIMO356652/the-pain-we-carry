@@ -153,4 +153,18 @@ article p {
   }
 }
   
+.book-cover {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 15px !important;
+  text-align: center !important;
+}
 
+.book-cover img {
+  display: block !important;
+  width: 220px !important;
+  max-width: 80% !important;
+  height: auto !important;
+  margin: 0 auto 20px auto !important;
+}
