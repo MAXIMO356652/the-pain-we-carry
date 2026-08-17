@@ -118,47 +118,56 @@ window.addEventListener("scroll", function () {
         lastChapter = chapter.id;
         localStorage.setItem("bookReadingPosition", "#" + chapter.id);
       }
-    }
-  });
-});
-// Book Search
+    // Book Search
 const searchInput = document.getElementById("bookSearch");
 const searchResults = document.getElementById("searchResults");
 
 if (searchInput && searchResults) {
+
   searchInput.addEventListener("input", function () {
-    const query = this.value.trim().toLowerCase();
+
+    const query = searchInput.value.trim().toLowerCase();
     searchResults.innerHTML = "";
 
-    if (!query) return;
+    if (query === "") {
+      return;
+    }
 
     const chapters = document.querySelectorAll(".book article");
     let found = 0;
 
     chapters.forEach(function (chapter) {
-      const text = chapter.innerText.toLowerCase();
 
-      if (text.includes(query)) {
+      const text = chapter.textContent.toLowerCase();
+
+      if (text.indexOf(query) !== -1) {
+
         const title = chapter.querySelector("h2");
 
         if (title) {
+
           const result = document.createElement("a");
+
           result.className = "search-result";
           result.href = "#" + chapter.id;
-          result.innerHTML =
-            "<strong>" + title.innerText + "</strong>";
+          result.textContent = title.textContent;
 
           searchResults.appendChild(result);
+
           found++;
         }
       }
     });
 
     if (found === 0) {
-      searchResults.innerHTML =
-        '<div class="search-empty">No results found.</div>';
+      const message = document.createElement("div");
+      message.className = "search-empty";
+      message.textContent = "No results found.";
+      searchResults.appendChild(message);
     }
+
   });
+
 }
 })();
 </script>
