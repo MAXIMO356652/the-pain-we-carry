@@ -66,4 +66,47 @@ article p {
     width: 100%;
     box-sizing: border-box;
   }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+  /* Book Search */
+
+.book-search {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+#bookSearch {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  outline: none;
+}
+
+#bookSearch:focus {
+  border-color: var(--accent);
+}
+
+#searchResults {
+  margin-top: 15px;
+}
+
+.search-result {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.search-result strong {
+  color: var(--accent);
+}
+
+.search-empty {
+  font-size: 16px;
+  opacity: .7;
+  padding: 10px 0;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
