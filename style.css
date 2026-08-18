@@ -141,56 +141,9 @@ article h2 {
   margin: 25px 5px 0;
 }
 
-.hero .nav-share {
-  background: transparent;
-  border: 1px solid #b89555;
-  color: #fffaf2;
-}
 
-/* Mobile */
-@media (max-width: 600px) {
 
-  .hero {
-    height: 560px;
-    min-height: 560px !important;
-    padding: 20px 12px !important;
-  }
 
-  .hero::before {
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-  }
-
-  .hero::after {
-    top: 18px;
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-  }
-
-  .hero .cover {
-    padding: 25px 15px !important;
-  }
-
-  .hero .copy h1 {
-    font-size: 3.6rem !important;
-    line-height: 0.84 !important;
-  }
-
-  .hero .copy h1 + p {
-    font-size: 1.15rem;
-    margin-top: 24px;
-  }
-
-  .hero .button {
-    width: 85%;
-    margin-top: 18px;
-  }
-}
-
-  
 
 
 
