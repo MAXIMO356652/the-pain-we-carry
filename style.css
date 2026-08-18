@@ -433,7 +433,39 @@ footer {
   }
      }
 
+/* Previous / Next buttons - keep them on one line */
 
+.chapter-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.chapter-nav .button {
+  width: auto;
+  flex: 0 1 auto;
+  min-width: 120px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Keep Previous and Next side-by-side on phones */
+@media (max-width: 600px) {
+  .chapter-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .chapter-nav .button {
+    width: auto;
+    min-width: 115px;
+    padding: 11px 12px;
+    font-size: 9px;
+  }
+   }
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
