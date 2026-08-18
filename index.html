@@ -125,4 +125,23 @@ window.addEventListener("scroll", function () {
 }
 })();
 </script>
-</body></html>
+  <script>
+function shareBook() {
+  const shareData = {
+    title: "The Pain We Carry — The Waiting-Maximo",
+    text: "The Pain We Carry — Growing Through the Life We Never Asked For.",
+    url: window.location.href
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData);
+  } else {
+    navigator.clipboard.writeText(window.location.href).then(function() {
+      alert("Book link copied. You can now share it.");
+    });
+  }
+}
+</script>
+
+</body>
+</html>
