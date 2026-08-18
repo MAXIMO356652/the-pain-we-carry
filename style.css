@@ -46,7 +46,102 @@ article h2 {
   font-weight: bold;
   text-align: center;
 }
+/* =====================================================
+   SUBTLE HERO IMPROVEMENT
+   Keeps the original design
+   ===================================================== */
 
+.hero {
+  min-height: 72vh !important;
+  background: #171411 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Thin elegant golden frame */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  border: 1px solid #80623b;
+  pointer-events: none;
+}
+
+/* Keep the original content above the border */
+.hero nav,
+.hero .cover {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .cover {
+  padding-top: 11vh !important;
+  padding-bottom: 8vh !important;
+}
+
+/* Book title */
+.hero .copy h1 {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 0.92 !important;
+  margin-top: 18px;
+  margin-bottom: 22px;
+}
+
+/* Author / book label */
+.hero .copy p:first-child {
+  font-family: Inter, Arial, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  color: #c7ab7c !important;
+}
+
+/* Subtitle */
+.hero .copy h1 + p {
+  font-size: 1.35rem !important;
+  line-height: 1.45 !important;
+  color: #d8cfc2 !important;
+  max-width: 520px;
+}
+
+/* Buttons remain unchanged, just slightly refined */
+.hero .button {
+  border-radius: 3px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 68vh !important;
+  }
+
+  .hero::before {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .hero .cover {
+    padding-top: 9vh !important;
+    padding-bottom: 6vh !important;
+  }
+
+  .hero .copy h1 {
+    font-size: 4rem !important;
+    line-height: 0.9 !important;
+  }
+
+  .hero .copy h1 + p {
+    font-size: 1.15rem !important;
+  }
+}
 
 
 
