@@ -1,0 +1,18 @@
+{
+  "name": "The Pain We Carry",
+  "short_name": "The Pain We Carry",
+  "description": "Growing Through the Life We Never Asked For — by Maximo Simukonda",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f5ef",
+  "theme_color": "#1f1f1f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "IMG-20240129-WA0090.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
